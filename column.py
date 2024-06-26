@@ -142,8 +142,8 @@ def applyOnImage(pathToImage):
 
             # Save the split images as L1_double.png and R1_double.png
             if left_image is not None and right_image is not None:
-                cv2.imwrite('./L1_double.png', left_image)
-                cv2.imwrite('./R1_double.png', right_image)
+                cv2.imwrite('./L_double.png', left_image)
+                cv2.imwrite('./R_double.png', right_image)
 
                 print('Left and right images saved as L1_double.png and R1_double.png.')
         else:
