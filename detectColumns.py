@@ -1,6 +1,6 @@
 import cv2
 import os
-
+import numpy as np
 
 
 # Calculate the maximum distance between column lines
