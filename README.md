@@ -18,5 +18,7 @@ pip install --upgrade-pip
 pip install -r requirements.txt
 ```
 
-## Other Changes
+## Other Things to worry  about
+Make sure all of your pdfs are in a folder named pdfs inside this same directory using the movePDFs.py file
+
 There are parts highlited with to be changed inorder for the program to access the right paths on your computer. Do change them inorder for the code to work correctly
