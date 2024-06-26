@@ -5,3 +5,4 @@ pdfs/
 processesdPDFs/
 pyvenv.cfg
 lib64
+__pycache__
