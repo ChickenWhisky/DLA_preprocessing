@@ -22,3 +22,19 @@ def get_pdf_name(pdf_path):
     pdf_name = os.path.splitext(pdf_basename)[0]
 
     return pdf_name
+
+def extract_fields_from_filename(file_path):
+    """
+    Extracts the PDF name and image index from a given file path.
+    The file is expected to be named in the format "{pdf_name}_{image_index}.png".
+    """
+    # Extract the base name of the file (without the directory path)
+    base_name = os.path.basename(file_path)
+    
+    # Remove the file extension (.png) and split by underscore
+    pdf_name, image_index_str = os.path.splitext(base_name)[0].rsplit('_', 1)
+    
+    # Convert image_index to an integer
+    image_index = int(image_index_str)
+    
+    return pdf_name, image_index

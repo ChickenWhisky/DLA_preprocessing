@@ -1,4 +1,6 @@
 from detectColumns import detect_columns
+from utilities import get_pdf_name,extract_fields_from_filename
+import cv2
 
 
 def split_image(image, line_coordinates):
@@ -40,10 +42,12 @@ def applyOnImage(pathToImage):
 
             # Save the split images as L1_double.png and R1_double.png
             if left_image is not None and right_image is not None:
-                cv2.imwrite('./L_double.png', left_image)
-                cv2.imwrite('./R_double.png', right_image)
+                pdf_name,pageNumber = extract_fields_from_filename(pathToImage)
+                cv2.imwrite(f'processesdPDFs/L_{pageNumber}_{pdf_name}.png', left_image)
+                cv2.imwrite(f'processesdPDFs/R_{pageNumber}_{pdf_name}.png', right_image)
 
                 print('Left and right images saved as L1_double.png and R1_double.png.')
         else:
-            cv2.imwrite('./single.png',original_image)
+            pdf_name,pageNumber = extract_fields_from_filename(pathToImage)
+            cv2.imwrite(f'processesdPDFs/S_{pageNumber}_{pdf_name}.png',original_image)
             print('Whole image is saved as singlepng.')

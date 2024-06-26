@@ -16,7 +16,8 @@ def process_pdf(pdf_path):
     with tempfile.TemporaryDirectory() as temp_dir:
         images = convert_from_path(pdf_path, output_folder=temp_dir)
         for image_index, image in enumerate(images):
-            image_path = os.path.join(temp_dir, f'image_{image_index}.png')
+            pdf_name = get_pdf_name(pdf_path)
+            image_path = os.path.join(temp_dir, f'{pdf_name}_{image_index}.png')
             image.save(image_path, 'PNG')
             print(f"Converted {pdf_path} page {image_index + 1} to image.")
 
