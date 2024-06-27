@@ -6,8 +6,7 @@ processesdPDFs/
 pyvenv.cfg
 lib64
 __pycache__/
-.gitignore
 output_pages/
 share/
 processed/
-single.pdfs
+./single.pdfs
