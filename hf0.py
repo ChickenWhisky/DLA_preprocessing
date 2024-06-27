@@ -79,7 +79,7 @@ def process_pdf(pdf_path):
     return processed_images
 
 # Example usage
-pdf_path = 'path.pdf'
+pdf_path = 'single.pdf'
 processed_images = process_pdf(pdf_path)
 
 # Display processed images
