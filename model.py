@@ -19,5 +19,5 @@ if image is None:
 layout = model.detect(image)
 
 # Visualize the detected layout
-lp.draw_box(image, layout, box_width=3)
+lp.draw_box(image, layout, box_width=3).show()
 
