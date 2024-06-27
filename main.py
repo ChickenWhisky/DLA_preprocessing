@@ -1,10 +1,12 @@
-
 import os
-import tempfile
 from pdf2image import convert_from_path
 from concurrent.futures import ThreadPoolExecutor
-from imageProcessing import  applyOnImage
+from imageProcessing import applyOnImage
 from utilities import get_pdf_name
+
+# Ensure img directory exists
+img_dir = 'img'
+os.makedirs(img_dir, exist_ok=True)
 
 def process_pdf(pdf_path):
     """
@@ -13,16 +15,15 @@ def process_pdf(pdf_path):
     print(f"Processing {pdf_path}...")
 
     # Convert PDF to images
-    with tempfile.TemporaryDirectory() as temp_dir:
-        images = convert_from_path(pdf_path, output_folder=temp_dir)
-        for image_index, image in enumerate(images):
-            pdf_name = get_pdf_name(pdf_path)
-            image_path = os.path.join(temp_dir, f'{pdf_name}_{image_index}.png')
-            image.save(image_path, 'PNG')
-            print(f"Converted {pdf_path} page {image_index + 1} to image.")
+    pdf_name = get_pdf_name(pdf_path)
+    images = convert_from_path(pdf_path)
+    for image_index, image in enumerate(images):
+        image_path = os.path.join(img_dir, f'{pdf_name}_{image_index}.png')
+        image.save(image_path, 'PNG')
+        print(f"Converted {pdf_path} page {image_index + 1} to image at {image_path}.")
 
-            # Apply the function on the converted image
-            applyOnImage(image_path)
+        # Apply the function on the converted image
+        applyOnImage(image_path)
 
 def process_pdfs_concurrently(pdf_directory):
     """
@@ -32,10 +33,8 @@ def process_pdfs_concurrently(pdf_directory):
     with ThreadPoolExecutor() as executor:
         executor.map(process_pdf, pdf_files)
 
-
 def main():
-    process_pdfs_concurrently('./pdfs')    
+    process_pdfs_concurrently('./pdfs')
 
-
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
