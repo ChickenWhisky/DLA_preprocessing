@@ -1,4 +1,4 @@
-from detectColumns import detect_columns
+from coloumndetect.detectColumns import detect_columns
 from utilities import get_pdf_name, extract_fields_from_filename
 import cv2
 import os
