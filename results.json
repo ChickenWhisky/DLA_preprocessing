@@ -1,0 +1,49 @@
+{
+    "637847777": {
+        "1": {
+            "header": {
+                "text": "The header elements distinctly from the image are:\n\n1. **Logo**: The logo at the top left corner of the image.\n2. **Medical Center Information**: The text \"Mon Health Medical Center\" and the address \"1200 JD Anderson Drive, Morgantown, WV 26505\".\n3. **Patient Information**: The patient's name, MRN, DOB/Gender, Account No., and Location.\n4. **Visit Type**: \"Inpatient\".\n5. **Admission Documents**: The heading \"Admission Documents\".\n\nThese elements are clearly visible and distinct from the rest of the image."
+            },
+            "footer": {
+                "text": "The footer elements distinctly from the image are:\n\n1. **Report Request ID: 41075457**\n2. **Page Number: 1 of 210**"
+            },
+            "tables": []
+        },
+        "2": {
+            "header": {
+                "text": "The header elements distinctly from the image are:\n\n1. **Mon Health Medical Center**\n2. **1200 JD Anderson Drive**\n3. **Morgantown, WV 26505**\n\nThe text is organized in a structured manner, with clear headings and sections for different types of information."
+            },
+            "footer": {
+                "text": "Sure, here are the distinct elements from the footer section of the image:\n\n1. **Date and Time Printed:**\n   - 5/8/2023 02:10 EDT\n\n2. **Report Request ID:**\n   - 41075457\n\n3. **Page Number:**\n   - 9 of 210"
+            },
+            "tables": [
+                {
+                    "bbox": [
+                        1645.6,
+                        2249.74,
+                        2372.54,
+                        2858.99
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "header": {
+                "text": "The header elements distinctly from the image are:\n\n- **Mon Health Medical Center**\n- **1200 JD Anderson Drive**\n- **Morgantown, WV 26505**\n\nThe text in the image is primarily focused on the Admission Documents section, which includes patient information, medical history, and medication orders."
+            },
+            "footer": {
+                "text": "Sure, here are the distinct elements from the footer of the image:\n\n- **Mon Health Medical Center**\n- **1200 JD Anderson Drive**\n- **Morgantown, WV 26505**\n- **Patient Name:**\n- **LORING, TINA MARIE**\n- **MRN:**\n- **DOB/Gender:**\n- **Location:**\n- **Admission Date:**\n- **Account No.:**\n\n**Admission Documents**\n\n**Assessment/Plan**\n\n1. **Cellulitis of buttock (L03.317: Cellulitis of buttock)**\n   - Ordered:\n     - 99222 - Initial Hospital IP/OSB Care Mod DM (55 min), 05/02/23 19:23:00 EDT\n     - Alk. Phos: 213 Unit/L High\n     - AST/SGOT: 33 I Unit/L\n     - ALT/SGOT: 38 I Unit/L\n     - Total Bili: 0.7 mg/dL\n     - Total Protein: 7.5 g/dL\n     - Albumin: 3.8 g/dL\n     - Calcium Level: 9.5 mg/dL\n     - Lactate Acid: 0.9 mmol/L\n     - WBC: 14\n     - Comments: May alternate with ibuprofen if ordered. Max dosage: 1,000 mg per 6 hours.\n\n2. **Sepsis (A04.1: Enterotoxigenic Escherichia coli infection)**\n   - Ordered:\n     - 99222 - Initial Hospital IP/OSB Care Mod DM (55 min), 05/02/23 19:23:00 EDT\n     - Alk. Phos: 213 Unit/L High\n     - AST/SGOT: 33 I Unit/L\n     - ALT/SGOT: 38 I Unit/L\n     - Total Bili: 0.7 mg/dL\n     - Total Protein: 7.5 g/dL\n     - Albumin: 3.8 g/dL\n     - Calcium Level: 9.5 mg/dL\n     - Lactate Acid: 0.9 mmol/L\n     - WBC: 14\n     - Comments: Hold for diarrhea, 50 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of fluid, 30 mL of"
+            },
+            "tables": [
+                {
+                    "bbox": [
+                        148.2,
+                        831.5,
+                        2385.84,
+                        2756.13
+                    ]
+                }
+            ]
+        }
+    }
+}
